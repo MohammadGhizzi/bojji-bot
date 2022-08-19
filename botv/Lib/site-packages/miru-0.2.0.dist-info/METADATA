@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: miru
+Version: 0.2.0
+Summary: Utility for keeping track of watched TV episodes and movies.
+Home-page: https://soft.github.io/miru/
+Author: Samuel Laurén
+Author-email: samuel.lauren@iki.fi
+License: UNKNOWN
+Keywords: log,management,tv,movies,organizer,collection
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: urwid
+Requires-Dist: sqlalchemy
+
+# Miru 📺
+
+[![Build Status](https://travis-ci.org/Soft/miru.svg?branch=master)](https://travis-ci.org/Soft/miru)
+[![GitHub release](https://img.shields.io/github/release/Soft/miru.svg)](https://github.com/Soft/miru/releases)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+**見る — to watch; to view;**
+
+Utility for keeping track of watched TV episodes and movies. Includes a nice
+ncurses based interface and an SQLite backend for storage.
+
+![screenshot](https://raw.githubusercontent.com/Soft/miru/master/docs/screenshots/shot-4.png)
+
+# Installation
+
+The latest stable version of Miru can be installed from [Python package
+index](https://pypi.org/project/miru/):
+
+```
+pip install --user miru
+```
+
+Alternatively, a development version can be obtained directly from GitHub:
+
+```
+pip install --user git+https://github.com/Soft/miru.git
+```
+
+# Key bindings
+
+Key | Action
+--- | ---
+`h`, `←` | Move to a view in left
+`l`, `→` | Move to a view in right
+`1` — `5` | Move to a spesific view
+`j`, `↓` | Focus next item
+`k`, `↑` | Focus previous item
+`i` | Increment seen episodes count for selected series
+`d` | Decrement seen episodes count for selected series
+`s` | Set seen episodes count to an arbitrary number
+`m` `a` | Mark series as active
+`m` `h` | Mark series as on hold
+`m` `d` | Mark series as dropped
+`m` `p` | Mark series as planned
+`o` `n` | Order by name
+`o` `s` | Order by seen episodes
+`o` `e` | Order by episode count
+`a` | Add new series
+`x` | Delete selected series
+`q`, `Q` | Exit Miru
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+miru = miru.app:main
+
