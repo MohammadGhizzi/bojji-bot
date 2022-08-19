@@ -1,5 +1,5 @@
 import os
-TOKEN = ("MTAwNjg0NjYzNzYwMTIwMjIzNg.G4Yzai.mfqhCrxBJE977labpt5YUO3J2EOLwyaWioV10A")
+TOKEN = ("")
 GUILDS = 873460501152165898
 PREFIX ="?"
 
