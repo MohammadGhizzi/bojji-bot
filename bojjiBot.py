@@ -12,6 +12,8 @@ from lightbulb.ext import tasks
 from speech import badword, memoji, re, text
 from typing import Final
 from extensions.users import hassan, rima, cold
+from extensions.games import *
+
 
 bojji = lightbulb.BotApp(
     token=TOKEN,
@@ -21,7 +23,7 @@ bojji = lightbulb.BotApp(
 )
 
 bojji.load_extensions('extensions.music')
-
+bojji.load_extensions('extensions.games')
 
 music_plugin = lightbulb.Plugin("music", "Music Related commands", include_datastore=True)
 music_plugin.add_checks(lightbulb.checks.guild_only)
@@ -52,8 +54,8 @@ async def on_starting(event):
 async def hassan(event: hikari.GuildMessageCreateEvent) -> None:
     if event.author_id == 605049087527747585:
         await event.message.add_reaction("😡")
-    if event.author_id == 275654737695604736:
-        await event.message.add_reaction("😡")
+"""    if event.author_id == 275654737695604736:
+        await event.message.add_reaction("😡")"""
 
         
 @bojji.listen()
@@ -61,10 +63,9 @@ async def hassan(event: hikari.GuildMessageCreateEvent) -> None:
     if event.author_id == 345984665456476163:
         await event.message.delete()
         await event.message.respond("اسكت ياكولد")
-"""    if event.author_id == nawaf:
-        await event.message.delete()
-        await event.message.respond("اسكت يانواف")"""
-        
+
+
+
 @bojji.listen()
 async def memo(event: hikari.GuildMessageCreateEvent) -> None:
     if event.is_bot or not event.content:
