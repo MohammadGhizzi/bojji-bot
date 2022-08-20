@@ -1,1 +1,1 @@
-worker: python ./projects/bojjiBot.py
+worker: python bojjiBot.py
