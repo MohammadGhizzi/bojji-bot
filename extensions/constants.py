@@ -1,5 +1,5 @@
 import os
-TOKEN = os.environ("DISCORD_TOKEN")
+TOKEN = os.environ("DISCORD_BOT")
 GUILDS = 873460501152165898
 PREFIX ="?"
 

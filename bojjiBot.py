@@ -15,7 +15,7 @@ from typing import Final
 from extensions.users import hassan, rima, cold
 
 bojji = lightbulb.BotApp(
-    token=os.environ("DISCORD_TOKEN"),
+    token=os.environ("DISCORD_BOT"),
     default_enabled_guilds=GUILDS,
     ignore_bots=True,
     prefix=lightbulb.when_mentioned_or(PREFIX),
