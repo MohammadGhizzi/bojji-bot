@@ -39,7 +39,7 @@ async def fun_cmd_grp(ctx: context.Context) -> None:
     )
 
 
-@fun_cmd_grp.child()
+"""@fun_cmd_grp.child()
 @lightbulb.add_cooldown(60, 1, lightbulb.UserBucket)
 @lightbulb.option("reason", "Reason why you are banning.", type=str, required=False,
                   modifier=commands.OptionModifier.CONSUME_REST)
@@ -54,7 +54,7 @@ async def fun_ban_cmd(ctx: context.Context) -> None:
             f"The fuel has been injected! Time to ban!" if ctx.options.reason is None else f"The fuel has been injected! Time to ban!\nReason: {ctx.options.reason}",
             "https://res.cloudinary.com/zeusabhijeet/image/upload/v1607091376/SleepBot/Fun%20Commands/ban.gif"
         )
-    )
+    )"""
 
 
 @fun_cmd_grp.child()
@@ -80,7 +80,7 @@ async def fun_petpat_cmd(ctx: context.Context) -> None:
         )
 
 
-@fun_cmd_grp.child()
+"""@fun_cmd_grp.child()
 @lightbulb.add_cooldown(60, 1, lightbulb.UserBucket)
 @lightbulb.option("text", "What's that you don't have?", type=str, required=False)
 @lightbulb.command("nomaidens", "No Maidens?", auto_defer=True)
@@ -100,7 +100,7 @@ async def fun_petpat_cmd(ctx: context.Context) -> None:
         await ctx.respond(
             content=f"An error occurred. API Status Code: {resp.status_code}",
             flags=hikari.MessageFlag.EPHEMERAL
-        )
+        )"""
 
 
 @fun_cmd_grp.set_error_handler()
