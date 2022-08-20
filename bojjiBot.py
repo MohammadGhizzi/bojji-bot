@@ -12,10 +12,9 @@ from lightbulb.ext import tasks
 from speech import badword, memoji, re, text
 from typing import Final
 from extensions.users import hassan, rima, cold
-token = None
 
 bojji = lightbulb.BotApp(
-    token=os.environ("DISCORD_BOT")
+    token=TOKEN
     default_enabled_guilds=GUILDS,
     ignore_bots=True,
     prefix=lightbulb.when_mentioned_or(PREFIX)
@@ -99,4 +98,4 @@ async def image(ctx):
     await ctx.respond(f)
         
         
-bojji.run(os.environ("DISCORD_BOT"))
+bojji.run()
