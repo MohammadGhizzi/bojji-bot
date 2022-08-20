@@ -1,6 +1,5 @@
 import os
 from extensions.constants import GUILDS,PREFIX, LAVALINK_HOST, LAVALINK_PASSWORD, LAVALINK_PORT
-import aiosqlite
 import hikari
 import lightbulb
 import time
