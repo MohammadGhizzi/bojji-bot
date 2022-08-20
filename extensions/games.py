@@ -1,6 +1,6 @@
 import hikari
 import lightbulb
-from constants import RAPI
+from extensions.constants import RAPI
 from random import randint
 from lightbulb import commands, context
 from hikari.files import Bytes
