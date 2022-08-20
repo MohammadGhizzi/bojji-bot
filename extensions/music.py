@@ -4,7 +4,7 @@ from typing import Optional
 
 #from discord import channel
 
-from extensions.constants import LAVALINK_PASSWORD, PREFIX
+from extensions.constants import LAVALINK_PASSWORD, PREFIX, TOKEN
 import lightbulb
 import lavasnek_rs
 
@@ -62,7 +62,7 @@ async def _join(ctx: lightbulb.Context) -> Optional[hikari.Snowflake]:
 async def start_lavalink(event: hikari.ShardReadyEvent) -> None:
     """Event that triggers when the hikari gateway is ready."""
     builder = (  # TOKEN can be an empty string if you don't want to use lavasnek's discord gateway.
-        lavasnek_rs.LavalinkBuilder(event.my_user.id)
+        lavasnek_rs.LavalinkBuilder(event.my_user.id, TOKEN)
             # This is the default value, so this is redundant, but it's here to show how to set a custom one.
             .set_host("127.0.0.1").set_password("CoolPass").set_port(2333)
     )
