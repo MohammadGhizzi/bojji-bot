@@ -13,11 +13,11 @@ from speech import badword, memoji, re, text
 from typing import Final
 from extensions.users import hassan, rima, cold
 
-bojji = lightbulb.BotApp(
+"""bojji = lightbulb.BotApp(
     default_enabled_guilds=GUILDS,
     ignore_bots=True,
     prefix=lightbulb.when_mentioned_or(PREFIX),
-)
+)"""
 
 bojji.load_extensions('extensions.music')
 
@@ -27,7 +27,7 @@ music_plugin.add_checks(lightbulb.checks.guild_only)
 
 
 
-"""@bojji.listen(hikari.StartedEvent)
+@bojji.listen(hikari.StartedEvent)
 async def ready_listener(event: hikari.StartedEvent) -> None:
     await bojji.update_presence(
         status=hikari.Status.ONLINE,
@@ -35,7 +35,7 @@ async def ready_listener(event: hikari.StartedEvent) -> None:
             name=f"^________^",
             type=hikari.ActivityType.LISTENING
         )
-    )"""
+    )
 
 
 @bojji.listen(hikari.GuildMessageCreateEvent)
