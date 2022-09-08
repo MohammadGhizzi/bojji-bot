@@ -57,12 +57,6 @@ async def hassan(event: hikari.GuildMessageCreateEvent) -> None:
 """    if event.author_id == 275654737695604736:
         await event.message.add_reaction("😡")"""
 
-        
-@bojji.listen()
-async def hassan(event: hikari.GuildMessageCreateEvent) -> None:
-    if event.author_id == 345984665456476163:
-        await event.message.delete()
-        await event.message.respond("اسكت ياكولد")
 
 
 

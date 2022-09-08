@@ -10,3 +10,9 @@ TIME_REGEX = r"([0-9]{1,2})[:ms](([0-9]{1,2})s?)?"
 SPOTCLIENT_ID = os.getenv("SPOTID")
 SPOTCLIENT_SECRET = os.getenv("SPOTSECRET")
 LAVALINK_PASSWORD = os.environ["LAVALINK_PASS"]
+
+"""@bojji.listen()
+async def hassan(event: hikari.GuildMessageCreateEvent) -> None:
+    if event.author_id == 345984665456476163:
+        #await event.message.delete()
+        await event.message.respond("اسكت ياكولد")"""
