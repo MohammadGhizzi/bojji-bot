@@ -80,7 +80,7 @@ async def fun_petpat_cmd(ctx: context.Context) -> None:
         )
 
 
-"""@fun_cmd_grp.child()
+@fun_cmd_grp.child()
 @lightbulb.add_cooldown(60, 1, lightbulb.UserBucket)
 @lightbulb.option("text", "What's that you don't have?", type=str, required=False)
 @lightbulb.command("nomaidens", "No Maidens?", auto_defer=True)
@@ -100,7 +100,7 @@ async def fun_petpat_cmd(ctx: context.Context) -> None:
         await ctx.respond(
             content=f"An error occurred. API Status Code: {resp.status_code}",
             flags=hikari.MessageFlag.EPHEMERAL
-        )"""
+        )
 
 
 @fun_cmd_grp.set_error_handler()
